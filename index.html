@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- tailwind css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+  <!-- my css -->
+  <link rel="stylesheet" href="style.css">
+  <!-- icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <title>Document</title>
+</head>
+<body class="bg-gray-800 relative" style="min-height: 100vh;">
+
+  <div class="container mx-auto px-5">
+  
+    <!-- header -->
+    <header id="home">
+      <nav class="py-9 fixed top-0 left-0 right-0 p-4 bg-gray-800 flex md:block justify-end w-full" style="z-index: 400;">
+        <p class="fas fa-bars cursor-pointer md:invisible text-3xl text-yellow-500 pr-12" onclick="openSidenav()"></p>
+        <ul class="flex gap-9 md:items-center md:justify-center flex-col md:flex-row p-10 md:p-0">
+          <li><a href="#home" class="text-gray-100 text-2xl hover:text-yellow-500">home</a></li>
+          <li><a href="#about" class="text-gray-100 text-2xl hover:text-yellow-500">about</a></li>
+          <li><a href="#skill" class="text-gray-100 text-2xl hover:text-yellow-500">skill</a></li>
+          <li><a href="#work" class="text-gray-100 text-2xl hover:text-yellow-500">how i work</a></li>
+          <li><a href="#projects" class="text-gray-100 text-2xl hover:text-yellow-500">projects</a></li>
+          <li><a href="#contact" class="text-gray-100 text-2xl hover:text-yellow-500">contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="profil flex justify-between items-center pt-36 flex-col-reverse md:flex-row">
+        <div class="image">
+          <img src="foto.png" alt="profil" width="400rem">
+        </div>
+        <div class="content text-center md:text-left">
+          <p class="text-gray-400 text-2xl">Halo, nama saya</p>
+          <h3 class="text-yellow-500 text-7xl my-2 font-black">Yasmin Ramadini</h3>
+          <p class="text-gray-100 text-2xl">Saya adalah seorang web programmer</p>
+          <a href="#" class="px-4 py-3 bg-yellow-500 text-gray-200 inline-block my-10 rounded-lg font-bold focus:ring-4 focus:ring-yellow-400 focus:bg-yellow-600 text-gray-300 hover:bg-yellow-700 hover:text-gray-300"><i class="fas fa-download"></i> download CV</a>
+        </div>
+      </div>
+
+    </header>
+    <!--end header  -->
+
+    <!-- about -->
+    <section id="about" class="md:my-7 mt-2 container px-10 mx-auto">
+      <h1 class="heading">about</h1>
+      <div class="card mx-auto bg-gray-700 rounded-md px-8 pt-14 pb-8 md:max-w-6xl max-w-xl mt-14 relative shadow-lg">
+        <p class="text-yellow-500 absolute quote">"</p>
+        <p class="text-gray-200 text-lg leading-8 font-semibold">Halo, nama saya <span class="text-yellow-500">Yasmin Ramadini</span>, saya adalah seorang web programmer. saya lahir di <span class="text-yellow-500">Bogor, 29 Oktober 2003</span>, saya lulusan dari <span class="text-yellow-500">SMK YZA 1 Bogor</span> jurusan <span class="text-yellow-500">multimedia</span>. Memulai programming sejak <span class="text-yellow-500">tahun 2020</span>. Saya telah membuat beragam website, mulai dari landing page, point of sale, portal berita, dll. Cita-cita saya ingin menjadi programmer profesional yang dapat ikut memajukan teknologi di Indonesia</p>
+      </div>
+    </section>
+    <!-- end about -->
+
+    <!-- skill -->
+    <section id="skill" class="mt-40 container mx-auto px-10">
+      <h1 class="heading">skill</h1>
+      <div class="grid md:grid-cols-3 grid-cols-2 py-20 gap-7 justify-between">
+
+        <div class="card bg-gray-700 md:pl-40 pl-28 shadow-lg py-4 pr-4 max-w-md rounded-md relative overflow-hidden h-24">
+          <i class="fas fa-check-circle hover:text-gray-400"></i>
+          <div class="card-body absolute hover:text-gray-400">
+          <b class="text-gray-200 text-xl">HTML</b>
+          <p class="text-gray-400">Level: expert</p>
+         </div>
+        </div>
+
+        <div class="card bg-gray-700 md:pl-40 pl-28 shadow-lg py-4 pr-4 max-w-md rounded-md relative overflow-hidden h-24">
+          <i class="fas fa-check-circle"></i>
+          <div class="card-body absolute">
+            <b class="text-gray-200 text-xl">CSS</b>
+            <p class="text-gray-400">Level: intermediate</p>
+          </div>
+         </div>
+
+         <div class="card bg-gray-700 md:pl-40 pl-28 shadow-lg py-4 pr-4 max-w-md rounded-md relative overflow-hidden h-24">
+          <i class="fas fa-check-circle"></i>
+          <div class="card-body absolute">
+            <b class="text-gray-200 text-xl">Javascript</b>
+            <p class="text-gray-400">Level: intermediate</p>
+          </div>
+         </div>
+
+         <div class="card bg-gray-700 md:pl-40 pl-28 shadow-lg py-4 pr-4 max-w-md rounded-md relative overflow-hidden h-24">
+          <i class="fas fa-check-circle"></i>
+          <div class="card-body absolute">
+            <b class="text-gray-200 text-xl">PHP</b>
+            <p class="text-gray-400">Level: intermediate</p>
+          </div>
+         </div>
+
+         <div class="card bg-gray-700 md:pl-40 pl-28 shadow-lg py-4 pr-4 max-w-md rounded-md relative overflow-hidden h-24">
+          <i class="fas fa-check-circle"></i>
+          <div class="card-body absolute">
+            <b class="text-gray-200 text-xl">CodeIgniter 4</b>
+            <p class="text-gray-400">Level: intermediate</p>
+          </div>
+         </div>
+
+         <div class="card bg-gray-700 md:pl-40 pl-28 shadow-lg py-4 pr-4 max-w-md rounded-md relative overflow-hidden h-24">
+          <i class="fas fa-check-circle"></i>
+          <div class="card-body absolute">
+            <b class="text-gray-200 text-xl">Laravel 8</b>
+            <p class="text-gray-400">Level: intermediate</p>
+          </div>
+         </div>
+
+         <div class="card bg-gray-700 md:pl-40 pl-28 shadow-lg py-4 pr-4 max-w-md rounded-md relative overflow-hidden h-24">
+          <i class="fas fa-check-circle"></i>
+          <div class="card-body absolute">
+            <b class="text-gray-200 text-xl">Bootstrap</b>
+            <p class="text-gray-400">Level: expert</p>
+          </div>
+         </div>
+
+         <div class="card bg-gray-700 md:pl-40 pl-28 shadow-lg py-4 pr-4 max-w-md rounded-md relative overflow-hidden h-24">
+          <i class="fas fa-check-circle"></i>
+          <div class="card-body absolute">
+            <b class="text-gray-200 text-xl">Tailwind CSS</b>
+            <p class="text-gray-400">Level: beginner</p>
+          </div>
+         </div>
+
+         <div class="card bg-gray-700 md:pl-40 pl-28 shadow-lg py-4 pr-4 max-w-md rounded-md relative overflow-hidden h-24">
+          <i class="fas fa-check-circle"></i>
+          <div class="card-body absolute">
+            <b class="text-gray-200 text-xl">jQuery</b>
+            <p class="text-gray-400">Level: intermediate</p>
+          </div>
+         </div>
+
+      </div>
+    </section>
+    <!-- end skill -->
+
+    <!-- work -->
+    <section id="work" class="mt-14 container mx-auto px-10">
+      <h1 class="heading">how i work</h1>
+      <div class="grid grid-cols-1 md:grid-cols-2 py-20 gap-16 justify-center">
+
+        <div class="card flex justify-between bg-gray-700 shadow-lg rounded-md p-6 gap-7 items-center">
+          <div class="text-8xl text-gray-600">1</div>
+          <div class="card-body">
+            <h2 class="text-3xl text-yellow-500 font-bold mb-4">problem analisys</h2>
+            <p class="text-gray-200 leading-7">saya akan menganalisa permasalahan terlebih dahulu. misalnya pada website toko online, bagaimana cara user melakukan transaksi, apa yang mau ditampilkan ketika pertama kali website dibuka, apa yang terjadi setelah user melakukan transaksi, dll.</p>
+          </div>
+        </div>
+
+        <div class="card flex justify-between bg-gray-700 shadow-lg rounded-md p-6 gap-8 items-center">
+          <div class="text-8xl text-gray-600">2</div>
+          <div class="card-body">
+            <h2 class="text-3xl text-yellow-500 font-bold mb-4">designing solutions</h2>
+            <p class="text-gray-200 leading-7">kemudian saya akan merancang solusi dari permasalahan tersebut secara garis besar beserta membuat algoritmanya. misalnya pada website toko online, ketika user membuka website maka tampilkan halaman home yang berisi katalog produk, lalu ketika user memilih produk maka akan tampil halaman detail, lalu tersedia tombol order, lalu user diarahkan ke halaman pembayaran ketika mengklik order, dan harus melakukan pembayaran dan upload bukti agar pengiriman bisa diproses.</p>
+          </div>
+        </div>
+
+        <div class="card flex justify-between bg-gray-700 shadow-lg rounded-md p-6 gap-7 items-center">
+          <div class="text-8xl text-gray-600">3</div>
+          <div class="card-body">
+            <h2 class="text-3xl text-yellow-500 font-bold mb-4">create a module</h2>
+            <p class="text-gray-200 leading-7">setelah memikirkan algoritmanya seara garis besar, saya akan memikirkan hal-hal yang lebih detail dan membaginya ke dalam modul terpisah. misalnya modul user yang berisi fitur untuk user, modul admin yang berisi fitur untuk admin, modul produk yang berisi CRUD produk, dll.</p>
+          </div>
+        </div>
+
+        <div class="card flex justify-between bg-gray-700 shadow-lg rounded-md p-6 gap-7 items-center">
+          <div class="text-8xl text-gray-600">4</div>
+          <div class="card-body">
+            <h2 class="text-3xl text-yellow-500 font-bold mb-4">excecution</h2>
+            <p class="text-gray-200 leading-7">setelah itu saya akan mulai mengeksekusi pembuatan program. dimulai dari membuat tampilan, hingga bermain dengan database dan logika.</p>
+          </div>
+        </div>
+
+        <div class="card flex justify-between bg-gray-700 shadow-lg rounded-md p-6 gap-7 items-center">
+          <div class="text-8xl text-gray-600">5</div>
+          <div class="card-body">
+            <h2 class="text-3xl text-yellow-500 font-bold mb-4">trials</h2>
+            <p class="text-gray-200 leading-7">setelah program dibuat, saya akan menguji cobanya untuk mencari bug dan memastikan program berjalan sesuai yang diharapkan sebelum akhirnya dihosting.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- end work -->
+
+    <!-- projects -->
+    <section id="projects" class="my-14">
+      <h1 class="heading">Projects</h1>
+    </section>
+    <!-- end projects -->
+
+  </div>
+
+  <footer class="bg-gray-700 p-10 text-center text-gray-200 mt-auto absolute left-0 right-0 mt-28" style="width: 100%;">
+
+    <p class="font-semibold text-lg">created by <span class="text-yellow-500">yasmin ramadini</span> with <i class="fas fa-heart text-yellow-500"></i></p>
+
+    <div class="sosmed flex gap-5 justify-center my-8">
+      <a href="https://github.com/yasminramadini" class="fab fa-github text-2xl bg-yellow-500 rounded-full inline-block p-4 hover:bg-gray-600"></a>
+      <a href="https://www.instagram.com/yasminramadini" class="fab fa-instagram text-2xl bg-yellow-500 rounded-full inline-block p-4 hover:bg-gray-600"></a>
+      <a href="https://youtube.com/channel/UCQFxXucHGM09os6HbfeHd2A" class="fab fa-youtube text-2xl bg-yellow-500 rounded-full inline-block p-4 hover:bg-gray-600"></a>
+      <a href="mailto:yasminramadini29@gmail.com" class="fas fa-envelope text-2xl bg-yellow-500 rounded-full inline-block p-4 hover:bg-gray-600"></a>
+      <a href="https://wa.me/6281584053640" class="fas fa-whatsapp text-2xl bg-yellow-500 rounded-full inline-block p-4 hover:bg-gray-600"></a>
+    </div>
+
+  </footer>
+
+  <script>
+    var navbar = document.querySelector('nav')
+
+    window.onscroll = function() {
+      if (this.scrollY > 4) {
+        navbar.classList.add("shadow-xl")
+      }
+      else {
+        navbar.classList.remove("shadow-xl")
+      }
+    }
+
+    if (this.scrollY > 4) {
+        navbar.classList.add("shadow-xl")
+      }
+      else {
+        navbar.classList.remove("shadow-xl")
+      }
+
+    var sidenav = document.querySelector('header ul')
+
+    function openSidenav() {
+      sidenav.classList.toggle('active')
+    }
+  </script>
+
+</body>
+</html>

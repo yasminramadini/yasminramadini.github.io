@@ -1,0 +1,181 @@
+* {
+  text-transform: capitalize;
+  padding: 0; margin: 0;
+  outline: none; border: none;
+  text-decoration: none;
+  transition: 0.2s linear;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,100&display=swap');
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-family: "Poppins", Sans-Serif;
+}
+
+body {
+  scroll-behavior: smooth;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f59e0b;
+  border-radius: 1.2rem;
+}
+
+img {
+  border: none;
+}
+
+/* header {
+  min-height: 100vh;
+} */
+
+header .image img {
+  position: relative;
+  animation-name: slideRight;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+header .content {
+  opacity: 0;
+  animation-name: slideUp;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    left: -10rem;
+  }
+  100% {
+    opacity: 100%;
+    left: 0;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    top: 10rem;
+    right: 20rem;
+  }
+  100% {
+    opacity: 100%;
+    top: 0;
+    right: 20rem;
+  }
+}
+
+.heading {
+  color: #fff;
+  font-size: 3rem;
+  position: relative;
+  text-align: center;
+}
+
+.heading::before {
+  position: absolute;
+  content: "";
+  width: 7%;
+  height: 0.2rem;
+  left: 50%;
+  top: -0.4rem;
+  background: #f59e0b;
+}
+
+.heading::after {
+  position: absolute;
+  content: "";
+  width: 7%;
+  height: 0.2rem;
+  right: 50%;
+  bottom: -0.4rem;
+  background: #f59e0b;
+}
+
+#about .card::after {
+  position: absolute;
+  content: "";
+  background: #f59e0b;
+  right: -1rem;
+  bottom: -0.3rem;
+  transform: rotate(3deg);
+  border-radius: 1rem;
+  width: 80%; height: 90%;
+  z-index: -1;
+}
+
+.quote {
+  top: -8rem; 
+  left: -1.7rem; 
+  font-size: 20rem; 
+  text-shadow: 0.8rem 0.9rem 1rem rgba(0, 0, 0, 0.4);
+}
+
+#skill .card::before {
+  content: "";
+  position: absolute;
+  background: #f59e0b;
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 10rem;
+  border-bottom-right-radius: 10rem;
+  left: -23rem; top: 0;
+  transition: all 0.3s linear;
+}
+
+#skill i {
+  position: absolute;
+  content: <i class="fas fa-check-circle"><i>;
+  font-size: 2rem;
+  color: #fff;
+  display: inline-block;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#skill .card:hover::before {
+  right: -40rem;
+  left: 0;
+}
+
+#skill .card .card-body {
+  z-index: 2;
+}
+
+#work .card {
+  border-right: 0.8rem solid #f59e0b;
+  cursor: pointer;
+}
+
+#work .card:hover {
+  transform: scale(1.05);
+}
+
+header ul.active {
+  left: 0;
+}
+
+@media screen and (max-width: 768px) {
+  header ul {
+    position: fixed;
+    top: 0; left: -100%; bottom: 0;
+    z-index: 500;
+    width: 20rem;
+    box-shadow: 0 0 10rem rgba(0, 0, 0, 0.8);
+    background: #3d4147;
+  }
+
+  header .profil .imsge img {
+    display: block;
+    margin: 0 auto;
+    width: 100rem;
+  }
+}
