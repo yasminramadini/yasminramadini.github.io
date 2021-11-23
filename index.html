@@ -5,11 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- tailwind css -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+  <link rel="stylesheet" href="tailwind.css">
   <!-- my css -->
   <link rel="stylesheet" href="style.css">
   <!-- icon -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="../icon/css/all.min.css">
   <title>Document</title>
 </head>
 <body class="bg-gray-800 relative" style="min-height: 100vh;">
@@ -26,7 +26,6 @@
           <li><a href="#skill" class="text-gray-100 text-2xl hover:text-yellow-500">skill</a></li>
           <li><a href="#work" class="text-gray-100 text-2xl hover:text-yellow-500">how i work</a></li>
           <li><a href="#projects" class="text-gray-100 text-2xl hover:text-yellow-500">projects</a></li>
-          <li><a href="#contact" class="text-gray-100 text-2xl hover:text-yellow-500">contact</a></li>
         </ul>
       </nav>
 
@@ -186,8 +185,55 @@
     <!-- end work -->
 
     <!-- projects -->
-    <section id="projects" class="my-14">
+    <section id="projects" class="my-14 container mx-auto px-10">
       <h1 class="heading">Projects</h1>
+      <div class="grid grid-cols-1 md:grid-cols-3 py-20 md:justify-between justify-center gap-8 justify-items-center md:justify-items-start">
+
+        <div class="card w-96 rounded-lg">
+          <div class="card-img">
+            <img src="project1.png" alt="aplikasi kasir point of sale" width="100%">
+          </div>
+          <div class="card-body p-8">
+            <h2 class="text-gray-200 text-2xl">Aplikasi Kasir Point Of Sale</h2>
+            <p class="text-md text-gray-400 mb-7 mt-4">Aplikasi kasir POS dibuat menggunakan Laravel 8, berfungsi menyimpan data barang dan transaksi pada sebuah toko.</p>
+            <a href="https://youtu.be/cbzvtG4XgpQ" class="text-yellow-500 text-md text-decoration-none">lihat video</a>
+          </div>
+        </div>
+
+        <div class="card w-96 rounded-lg">
+          <div class="card-img">
+            <img src="project2.png" alt="aplikasi website raport online" width="100%">
+          </div>
+          <div class="card-body p-8">
+            <h2 class="text-gray-200 text-2xl">Website raport online</h2>
+            <p class="text-md text-gray-400 mb-7 mt-4">Website raport online dibuat menggunakan CodeIgniter 4. berfungsi mengelola data raport siswa.</p>
+            <a href="https://youtu.be/dbvFp9-nLT8" class="text-yellow-500 text-md text-decoration-none">lihat video</a>
+          </div>
+        </div>
+        
+        <div class="card w-96 rounded-lg">
+          <div class="card-img">
+            <img src="project3.png" alt="landing page toko buku" width="100%">
+          </div>
+          <div class="card-body p-8">
+            <h2 class="text-gray-200 text-2xl">Landing Page Toko Buku</h2>
+            <p class="text-md text-gray-400 mb-7 mt-4">Landing page toko buku yang dibuat menggunakan HTML, CSS, dan Javascript</p>
+            <a href="https://youtu.be/Hb73mX7VvRY" class="text-yellow-500 text-md text-decoration-none">lihat video</a>
+          </div>
+        </div>
+        
+        <div class="card w-96 rounded-lg">
+          <div class="card-img">
+            <img src="project4.png" alt="landing page website kesehatan" width="100%">
+          </div>
+          <div class="card-body p-8">
+            <h2 class="text-gray-200 text-2xl">Landing Page Website Kesehatan</h2>
+            <p class="text-md text-gray-400 mb-7 mt-4">landing page website kesehatan yang dibuat menggunakan HTML, CSS, dan Javascript.</p>
+            <a href="https://youtu.be/NDpZgUwI90Q" class="text-yellow-500 text-md text-decoration-none">lihat video</a>
+          </div>
+        </div>
+
+      </div>
     </section>
     <!-- end projects -->
 
@@ -200,9 +246,8 @@
     <div class="sosmed flex gap-5 justify-center my-8">
       <a href="https://github.com/yasminramadini" class="fab fa-github text-2xl bg-yellow-500 rounded-full inline-block p-4 hover:bg-gray-600"></a>
       <a href="https://www.instagram.com/yasminramadini" class="fab fa-instagram text-2xl bg-yellow-500 rounded-full inline-block p-4 hover:bg-gray-600"></a>
-      <a href="https://youtube.com/channel/UCQFxXucHGM09os6HbfeHd2A" class="fab fa-youtube text-2xl bg-yellow-500 rounded-full inline-block p-4 hover:bg-gray-600"></a>
-      <a href="mailto:yasminramadini29@gmail.com" class="fas fa-envelope text-2xl bg-yellow-500 rounded-full inline-block p-4 hover:bg-gray-600"></a>
-      <a href="https://wa.me/6281584053640" class="fas fa-whatsapp text-2xl bg-yellow-500 rounded-full inline-block p-4 hover:bg-gray-600"></a>
+      <a href="#" class="fab fa-youtube text-2xl bg-yellow-500 rounded-full inline-block p-4 hover:bg-gray-600"></a>
+      <a href="#" class="fas fa-envelope text-2xl bg-yellow-500 rounded-full inline-block p-4 hover:bg-gray-600"></a>
     </div>
 
   </footer>

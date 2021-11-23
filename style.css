@@ -6,12 +6,15 @@
   transition: 0.2s linear;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,100&display=swap');
+@font-face {
+  font-family: "Poppins";
+  src: url(../static/Poppins-Regular.ttf);
+}
 
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  font-family: "Poppins", Sans-Serif;
+  font-family: "Poppins";
 }
 
 body {
@@ -161,6 +164,10 @@ header .content {
 
 header ul.active {
   left: 0;
+}
+
+#projects .card {
+  border: 0.1rem solid rgb(172, 172, 172);
 }
 
 @media screen and (max-width: 768px) {
